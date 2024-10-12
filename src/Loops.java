@@ -8,9 +8,10 @@ public class Loops {
         double mediaEvaluaciones = 0;
 
         for (int i = 0; i < 3; i++) {
-            System.out.println("Escribe la nota que le pondrías a la película Matrix");
             nota = teclado.nextDouble();
-            
+            mediaEvaluaciones = mediaEvaluaciones + nota;
+
         }
+        System.out.println("la media de evaluaciones para Matrix es: " + mediaEvaluaciones / 3);
     }
 }
